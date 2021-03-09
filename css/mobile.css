@@ -1,0 +1,191 @@
+@media screen and (max-width: 1280px) {
+	.numbers-wrap p:nth-child(1) {
+	    font-size: 11px;
+	}
+	span.mobile-add-task button {
+	    display: block;
+	    width: 145px;
+	    text-align: left;
+	    margin: 3px;
+	}
+	.open-task-on-mobile {
+		display: inline-block;
+    	width: 30px;
+    	text-align: center;
+    	background: #eee;
+	}
+	span.mobile-add-task {
+	    position: absolute;
+	    right: 10px;
+	    top: 34px;
+	    z-index: 111;
+	    display: none;
+	}
+}
+@media screen and (max-width: 1199px) {
+	.circle-wrapper {
+	    margin-bottom: 30px;
+	}
+}
+@media screen and (max-width: 1065px) {
+	.mobile-logo {
+		font-size: 18px;
+	    font-weight: bold;
+	    letter-spacing: 2px;
+	    color: #fff;
+	    line-height: 60px;
+	    display: block;
+	}
+	ul.logo-nav li a.main-logo {
+        color: #fff;
+	}
+	.right-nav .for-user {
+		display: none;
+	}
+	ul.logo-nav {
+	    position: fixed;
+	    z-index: 775;
+	    background: #1e3342;
+	    left: -80%;
+	    bottom: 0;
+	    top: 0;
+	    width: 70%;
+	    transition: 0.2s all linear;
+	    overflow: auto;
+	}
+	ul.logo-nav li {
+	    margin-right: 0px;
+	    line-height: 60px;
+	    position: relative;
+	    top: 0px;
+	    display: block;
+	    padding: 0px 30px;
+    	border-bottom: 1px solid #00000063;
+	}
+	.profile-dropdown-mobile, .user-dropdown-mobile {
+		display: block;
+	}
+	.user-dropdown-mobile span, .profile-dropdown-mobile span {
+		color: #fff;
+	}
+	ul.help-dropdown, ul.help-dropdown-user {
+	    background: #fff;
+	    border-radius: 0px;
+	    box-shadow: unset;
+	    position: static;
+	    width: 100%;
+	    margin-bottom: 20px;
+	}
+	#nav-icon3 {
+		display: block;
+		position: relative;
+        top: 15px;
+	}
+	.new-task-form {
+		width: 70%;
+	}
+	.collection-wrap {
+		position: relative;
+	}
+	.collection-wrap .fa.fa-exclamation-circle {
+		position: absolute;
+		right: -16px;
+		top: 3px;
+	}
+	.data-table-section {
+	    overflow: auto;
+	    position: relative;
+	}
+	.table {
+    	min-width: 1024px;
+    }
+    ul.help-dropdown li, ul.help-dropdown-user li {
+    	line-height: 30px;
+    }
+    ul.help-dropdown-user li a, ul.help-dropdown li a {
+	    border-bottom: none;
+	}
+	ul.logo-nav li:nth-child(1):hover {
+	    background-color: #fff;
+	}
+	.table-bar {
+		position: relative;
+	}
+	.table-bar:before {
+	    content: 'Scroll Table Right & Left';
+	    position: absolute;
+	    bottom: -8px;
+	    left: 10px;
+	    background: #FF9800;
+	    color: #fff;
+	    padding: 0px 10px;
+	    border-radius: 30px;
+	    box-shadow: 0px 0px 5px #000;
+	    font-size: 10px;
+	}
+	.overlay, .overlay2 {
+	    height: calc(100vh - 0px);
+	}
+}
+@media screen and (max-width: 924px) {
+	form.form-horizontal {
+		display: none;
+	}
+	.open-task-on-mobile {
+	    position: relative;
+	    top: 0px;
+	    right: 0px;
+	    height: 30px;
+	    padding-top: 5px;
+	}
+	form.form-horizontal.mobile-horizontal-form {
+	    display: block;
+	    margin: 15px auto 0 !important;
+	    width: 100%;
+	    max-width: 80%;
+	    margin: auto;
+	}
+}
+@media screen and (max-width: 767px) {
+	.no-margin {
+	    margin-bottom: 30px !important;
+	}
+	.no-margin.no-margin-mobile {
+		margin-bottom: 0 !important
+	}
+	.new-task-form {
+	    width: 85%;
+	}
+	.filter-by {
+		display: none;
+	}
+	.open-filter-options {
+		display: block;
+		color: #000;
+		font-weight: bold;
+	}
+	span.open-filters {
+	    position: absolute;
+	    z-index: 14;
+	    background: #fff;
+	    display: none;
+	}
+	span.overview {
+	    padding: 5px 4px;
+	    color: #777;
+	    font-size: 11px;
+	    display: block;
+	    width: 200px;
+	}
+}
+@media screen and (max-width: 555px) {
+	span.overview {
+	    padding: 5px 4px;
+	    color: #777;
+	    font-size: 11px;
+	}
+	.priority-checks .check-radio {
+	    padding-left: 18px;
+	    margin-right: 4px;
+	}
+}

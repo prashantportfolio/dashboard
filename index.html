@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#000">
+	<title>Map My India Task By Prashant</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/png"/><!--Favicon-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<link rel="stylesheet" type="text/css" href="css/tokenize2.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"><!--Animate.CSS -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"><!-- Font family -->
+</head>
+<body>
+	<header><!-- Top Navigation Section -->
+		<div class="container-fluid">
+			<nav class="clearfix">
+				<div class="left-nav">
+					<a href="#" class="main-logo mobile-logo">WORKMATE</a>
+					<ul class="logo-nav toggle-menu">
+						<li><a href="#" class="main-logo">WORKMATE</a></li>
+						<li>
+							<a href="#">
+								<i class="fa fa-users" aria-hidden="true"></i> People
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-suitcase" aria-hidden="true"></i> Clients
+							</a>
+						</li>
+						<li class="active">
+							<a href="#">
+								<i class="fa fa-th-large" aria-hidden="true"></i> Dashboard
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-file" aria-hidden="true"></i> Report
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-cog" aria-hidden="true"></i> Settings
+							</a>
+						</li>
+						<li class="user-dropdown-mobile">
+							<span><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+							<span>Help <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+							<ul class="help-dropdown">
+								<li><a href="#">Call Us</a></li>
+								<li><a href="#" class="no-border">Email Us</a></li>
+							</ul>
+						</li>
+						<li class="profile-dropdown-mobile">
+							<span><img src="assets/avatar.png" class="avatar-image"></span>
+							<span>Ritesh Arora <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+							<ul class="help-dropdown-user">
+								<li><a href="#">My Profile</a></li>
+								<li><a href="#" class="no-border">All Orders</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="right-nav">
+					<div id="nav-icon3"><!--Mobile Hamburger Menu-->
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					</div><!--Mobile Hamburger Menu-->
+					<ul class="for-user">
+						<li class="user-dropdown">
+							<span><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+							<span>Help <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+							<ul class="help-dropdown">
+								<li><a href="#">Call Us</a></li>
+								<li><a href="#" class="no-border">Email Us</a></li>
+							</ul>
+						</li>
+						<li class="profile-dropdown">
+							<span><img src="assets/avatar.png" class="avatar-image"></span>
+							<span>Ritesh Arora <i class="fa fa-caret-down" aria-hidden="true"></i></span>
+							<ul class="help-dropdown-user">
+								<li><a href="#">My Profile</a></li>
+								<li><a href="#" class="no-border">All Orders</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header><!-- Top Navigation Section Ends here-->
+
+	<section class="card-section"><!-- Four Card Section -->
+		<div class="border-section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+					<div class="circle-wrapper">
+					   <div class="card-wrapper first-card">
+			              <div class="tasks total-task">
+			                Total Tasks
+			              </div>
+			              <div class="text-wrapper">
+			              <div class="row">
+			                <div class="col-xs-6">
+			                	<div class="numbers-wrap">
+				                  <p>TOTAL TASKS</p>
+				                  <p class="task-number">518</p>
+				                </div>
+			                </div>
+			                <div class="col-xs-6">
+			                  <div class="single-chart">
+			                    <svg viewBox="0 0 36 36" class="circular-chart orange">
+			                      <path class="circle-bg"
+			                        d="M18 2.0845
+			                          a 15.9155 15.9155 0 0 1 0 31.831
+			                          a 15.9155 15.9155 0 0 1 0 -31.831"
+			                      />
+			                      <path class="circle"
+			                        stroke-dasharray="100, 100"
+			                        d="M18 2.0845
+			                          a 15.9155 15.9155 0 0 1 0 31.831
+			                          a 15.9155 15.9155 0 0 1 0 -31.831"
+			                      />
+			                      <text x="18" y="20.35" class="percentage">100%</text>
+			                    </svg>
+			                  </div>
+			                </div>
+			               </div>
+			             </div>
+			            </div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+				    <div class="circle-wrapper">
+				       <div class="card-wrapper first-card">
+			              <div class="tasks open-task">
+			                Open Tasks
+			              </div>
+			              <div class="text-wrapper">
+			              <div class="row">
+			                <div class="col-xs-6">
+			                  <div class="numbers-wrap">
+				                  <p>OPEN TASKS</p>
+				                  <p class="task-number">225</p>
+				              </div>
+			                </div>
+			                <div class="col-xs-6">
+			                  <div class="single-chart">
+			                    <svg viewBox="0 0 36 36" class="circular-chart pink">
+			                      <path class="circle-bg"
+			                        d="M18 2.0845
+			                          a 15.9155 15.9155 0 0 1 0 31.831
+			                          a 15.9155 15.9155 0 0 1 0 -31.831"
+			                      />
+			                      <path class="circle"
+			                        stroke-dasharray="43, 100"
+			                        d="M18 2.0845
+			                          a 15.9155 15.9155 0 0 1 0 31.831
+			                          a 15.9155 15.9155 0 0 1 0 -31.831"
+			                      />
+			                      <text x="18" y="20.35" class="percentage">43%</text>
+			                    </svg>
+			                  </div>
+			                </div>
+			              </div>
+			            </div>
+			           </div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+					<div class="circle-wrapper no-margin">
+						<div class="card-wrapper first-card">
+			              <div class="tasks wip-task">
+			                Wip Tasks
+			              </div>
+			              <div class="text-wrapper">
+			              <div class="row">
+			                <div class="col-xs-6">
+			                  <div class="numbers-wrap">
+				                  <p>WIP TASKS</p>
+				                  <p class="task-number">6</p>
+				              </div>
+			                </div>
+			                <div class="col-xs-6">
+			                  <div class="single-chart">
+			                    <svg viewBox="0 0 36 36" class="circular-chart blue">
+			                      <path class="circle-bg"
+			                        d="M18 2.0845
+			                          a 15.9155 15.9155 0 0 1 0 31.831
+			                          a 15.9155 15.9155 0 0 1 0 -31.831"
+			                      />
+			                      <path class="circle"
+			                        stroke-dasharray="1, 100"
+			                        d="M18 2.0845
+			                          a 15.9155 15.9155 0 0 1 0 31.831
+			                          a 15.9155 15.9155 0 0 1 0 -31.831"
+			                      />
+			                      <text x="18" y="20.35" class="percentage">1%</text>
+			                    </svg>
+			                  </div>
+			                </div>
+			              </div>
+			            </div>
+			          </div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+					<div class="circle-wrapper no-margin no-margin-mobile">
+						<div class="card-wrapper first-card">
+			              <div class="tasks closed-task">
+			                Closed Tasks
+			              </div>
+			              <div class="text-wrapper">
+			              <div class="row">
+			                <div class="col-xs-6">
+			                	<div class="numbers-wrap">
+				                  <p>CLOSED TASKS</p>
+				                  <p class="task-number">287</p>
+				                </div>
+			                </div>
+			                <div class="col-xs-6">
+			                  <div class="single-chart">
+			                    <svg viewBox="0 0 36 36" class="circular-chart green">
+			                      <path class="circle-bg"
+			                        d="M18 2.0845
+			                          a 15.9155 15.9155 0 0 1 0 31.831
+			                          a 15.9155 15.9155 0 0 1 0 -31.831"
+			                      />
+			                      <path class="circle"
+			                        stroke-dasharray="55, 100"
+			                        d="M18 2.0845
+			                          a 15.9155 15.9155 0 0 1 0 31.831
+			                          a 15.9155 15.9155 0 0 1 0 -31.831"
+			                      />
+			                      <text x="18" y="20.35" class="percentage">55%</text>
+			                    </svg>
+			                  </div>
+			                </div>
+			              </div>
+			            </div>
+					  </div>
+				    </div>
+				  </div>
+			    </div>
+		      </div>
+		    </div>
+	     </section><!-- Four Card Section Ends Here -->
+
+	     <section class="table-section"><!-- Table Section -->
+	     	<div class="table-bar">
+	     	<div class="container-fluid">
+	     			<div class="row">
+	     				<div class="col-lg-7 col-md-6 col-sm-8 col-xs-10">
+	     					<div class="left-section">
+	     						<span class="filter-by">Filter By:</span>
+	     						<span class="open-filter-options">Open Filter:</span>
+	     						<span class="open-filters">
+		     						<span class="overview overlay-active">
+		     							All <span class="rounded">518</span>
+		     						</span>
+		     						<span class="overview">
+		     							Open <span class="rounded">225</span>
+		     						</span>
+		     						<span class="overview">
+		     							WIP <span class="rounded">6</span>
+		     						</span>
+		     						<span class="overview">
+		     							Closed <span class="rounded">287</span>
+		     						</span>
+	     						</span>
+	     					</div>
+	     				</div>
+	     				<div class="col-lg-5 col-md-6 col-sm-4 col-xs-2">
+	     					<div class="right-section">
+	     						<form class="form-horizontal" action="/action_page.php">
+								  <div class="form-group">
+								      <input type="text" class="form-control" id="myInput" placeholder="Search">
+								      <i class="fa fa-search" aria-hidden="true"></i>
+								  </div>
+								</form>
+								<span class="open-task-on-mobile"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                              <span class="mobile-add-task">
+									<button class="add-task">
+										<i class="fa fa-plus-circle" aria-hidden="true"></i>
+										Add Task
+									</button>
+									<button class="add-task">
+										<i class="fa fa-plus-circle" aria-hidden="true"></i>
+										Add Task List
+									</button>
+								</span>
+	     					</div>
+	     				</div>
+	     			</div>
+	     		</div>
+	     		<form class="form-horizontal mobile-horizontal-form" action="/action_page.php">
+				  <div class="form-group">
+				      <input type="text" class="form-control" id="myInput2" placeholder="Search">
+				      <i class="fa fa-search" aria-hidden="true"></i>
+				  </div>
+				</form>
+	     	</div>
+	     	<div class="data-table-section"><!-- Table Starts -->
+	     		<table class="table">
+				    <thead>
+				      <tr>
+				      	<th></th>
+				        <th>Name</th>
+				        <th>Description</th>
+				        <th>Client</th>
+				        <th>Due Date</th>
+				        <th>Creation Date</th>
+				        <th>Priority</th>
+				        <th>Task Owner</th>
+				        <th>Assigned To</th>
+				        <th>Status</th>
+				        <th>Action</th>
+				      </tr>
+				    </thead>
+				    <tbody id="myTable">
+				      <tr class="folder-content toggle-table-content">
+				        <td>
+					         <div class="accordian">
+					      		<i class="fa fa-plus-circle" aria-hidden="true"></i>
+					      		<i class="fa fa-minus-circle hide-icon" aria-hidden="true"></i>
+					      	 </div>
+				        </td>
+				        <td>
+				        	 <span class="collection-wrap">
+				      			<i class="fa fa-folder-open" aria-hidden="true"></i>
+				      			collection <span class="folder-number">(4)</span>
+				      			<i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+				      		 </span>
+				        </td>
+				      </tr>
+				      <tr class="toggle-row">
+				        <td></td>
+				        <td><a href="#">Current cheque from location</a></td>
+				        <td>Please collect the cheque from the <br> client and give the snapshot</td>
+				        <td>Cadila Healthcare <br> Ltd-Zyfine-Onco</td>
+				        <td class="due-date">
+				        	11:15PM <br> 28/07/2018
+				        </td>
+				        <td>
+				        	05:00PM <br> 31/01/2018
+				        </td>
+				        <td>
+				        	<span class="bar"></span>
+				        	<span>High</span>
+				        </td>
+				        <td>
+				        	Ritesh Arora
+				        </td>
+				        <td>
+				        	Aditya Sharma
+				        </td>
+				        <td>
+				        	<span>Overdue</span>
+				        </td>
+				        <td class="edit-wrapper">
+				        	<span class="edit-dots"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+				        	<ul class="edit">
+				        		<li><a href="#">
+				        			<i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit
+				        		</a></li>
+				        		<li><a href="#">
+				        			<i class="fa fa-times-circle" aria-hidden="true"></i> Close
+				        		</a></li>
+				        	</ul>
+				        </td>
+				      </tr>
+				      <tr class="toggle-row">
+				         <td></td>
+				        <td><a href="#">Check the client functionality</a></td>
+				        <td>Please check the client <br> functionality like checkin, Check <br> out, comments, Images etc. </td>
+				        <td>Cadila Healthcare <br> Ltd-Zyfine-Finance</td>
+				        <td>
+				        	11:15PM <br> 28/07/2018
+				        </td>
+				        <td>
+				        	05:00PM <br> 31/01/2018
+				        </td>
+				        <td>
+				        	<span class="bar"></span>
+				        	<span>High</span>
+				        </td>
+				        <td>
+				        	Ritesh Arora
+				        </td>
+				        <td>
+				        	Aditya Sharma
+				        </td>
+				        <td>
+				        	<span>Overdue</span>
+				        </td>
+				        <td class="edit-wrapper">
+				        	<span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+				        </td>
+				      </tr>
+				       <tr class="toggle-row">
+				         <td></td>
+				        <td><a href="#">Check the client functionality</a></td>
+				        <td>Please check the client <br> functionality like checkin, Check <br> out, comments, Images etc. </td>
+				        <td>Cadila Healthcare <br> Ltd-Zyfine-Finance</td>
+				        <td>
+				        	11:15PM <br> 28/07/2018
+				        </td>
+				        <td>
+				        	05:00PM <br> 31/01/2018
+				        </td>
+				        <td>
+				        	<span class="bar"></span>
+				        	<span>High</span>
+				        </td>
+				        <td>
+				        	Ritesh Arora
+				        </td>
+				        <td>
+				        	Aditya Sharma
+				        </td>
+				        <td>
+				        	<span>Overdue</span>
+				        </td>
+				        <td class="edit-wrapper">
+				        	<span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+				        </td>
+				      </tr>
+				       <tr class="toggle-row">
+				         <td></td>
+				        <td><a href="#">Check the client functionality</a></td>
+				        <td>Please check the client <br> functionality like checkin, Check <br> out, comments, Images etc. </td>
+				        <td>Cadila Healthcare <br> Ltd-Zyfine-Finance</td>
+				        <td>
+				        	11:15PM <br> 28/07/2018
+				        </td>
+				        <td>
+				        	05:00PM <br> 31/01/2018
+				        </td>
+				        <td>
+				        	<span class="bar"></span>
+				        	<span>High</span>
+				        </td>
+				        <td>
+				        	Ritesh Arora
+				        </td>
+				        <td>
+				        	Aditya Sharma
+				        </td>
+				        <td>
+				        	<span>Overdue</span>
+				        </td>
+				        <td class="edit-wrapper">
+				        	<span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+				        </td>
+				      </tr>
+				      <tr class="folder-content">
+				        <td>
+					         <div class="accordian">
+					      		<i class="fa fa-plus-circle" aria-hidden="true"></i>
+					      		<i class="fa fa-minus-circle hide-icon" aria-hidden="true"></i>
+					      	 </div>
+				        </td>
+				        <td>
+				        	 <span>
+				      			<i class="fa fa-folder-open" aria-hidden="true"></i>
+				      			task <span class="folder-number">(2)</span>
+				      			<i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+				      		 </span>
+				        </td>
+				      </tr>
+				      <tr class="folder-content">
+				        <td>
+					         <div class="accordian">
+					      		<i class="fa fa-plus-circle" aria-hidden="true"></i>
+					      		<i class="fa fa-minus-circle hide-icon" aria-hidden="true"></i>
+					      	 </div>
+				        </td>
+				        <td>
+				        	 <span>
+				      			<i class="fa fa-folder-open" aria-hidden="true"></i>
+				      			workmate testing <span class="folder-number">(1)</span>
+				      		 </span>
+				        </td>
+				      </tr>
+				       <tr class="folder-content">
+				        <td>
+					         <div class="accordian">
+					      		<i class="fa fa-plus-circle" aria-hidden="true"></i>
+					      		<i class="fa fa-minus-circle hide-icon" aria-hidden="true"></i>
+					      	 </div>
+				        </td>
+				        <td>
+				        	 <span>
+				      			<i class="fa fa-folder-open" aria-hidden="true"></i>
+				      			Client demo <span class="folder-number">(6)</span>
+				      		 </span>
+				        </td>
+				      </tr>
+				       <tr class="folder-content">
+				        <td>
+					         <div class="accordian">
+					      		<i class="fa fa-plus-circle" aria-hidden="true"></i>
+					      		<i class="fa fa-minus-circle hide-icon" aria-hidden="true"></i>
+					      	 </div>
+				        </td>
+				        <td>
+				        	 <span>
+				      			<i class="fa fa-folder-open" aria-hidden="true"></i>
+				      			General <span class="folder-number">(215)</span>
+				      		 </span>
+				        </td>
+				      </tr>
+				    </tbody>
+			   </table>
+	     	</div><!-- Table Ends -->
+	     </section><!-- Table Section Ends -->
+
+	     <div class="overlay"></div>
+	     <div class="overlay2"></div>
+
+	     <div class="new-task-form"><!-- Create New Task Form -->
+	     	<div class="form-head clearfix">
+	     		<p>New Task</p>
+	     		<i class="fa fa-times-circle close-form" aria-hidden="true"></i>
+	     	</div>
+	     	<form action="/action_page.php">
+	     	<div class="form-padding-wrapper">
+			  <div class="form-group">
+			    <label for="taskname">Task Name <span>*</span></label>
+			    <input type="text" class="form-control" id="taskname">
+			  </div>
+			  <div class="form-group">
+			    <label for="desc">Description</label>
+			    <textarea type="text" rows="3" class="form-control" id="desc"></textarea>
+			  </div>
+			  <div class="form-group">
+			    <label for="skillset">Skill Sets</label>
+			    <select class="form-control" id="skillset">
+			    	 <option selected="" disabled="">Select Skills...</option>
+				    <option>Skill 1</option>
+				    <option>Skill 2</option>
+				    <option>Skill 3</option>
+				    <option>Skill 4</option>
+				 </select>
+			  </div>
+			  <div class="form-group">
+			    <label for="assigned">Assigned to</label>
+			    <select class="form-control" id="assigned">
+			    	 <option selected="" disabled="">Select User</option>
+				    <option>Rahul</option>
+				    <option>Shivam</option>
+				    <option>Raghav</option>
+				    <option>Prashant</option>
+				 </select>
+			  </div>
+			  <div class="open-for-assigned-top">
+			   <div class="form-group">
+			    <label for="date">Due Date and Time <span>*</span></label>
+			    <input type="date" rows="4" class="form-control" id="date">
+			  </div>
+			   <div class="form-group">
+			    <label for="assigned">Client <span>*</span></label>
+			    <select class="form-control" id="assigned">
+				    <option selected="" disabled="">Select Client</option>
+				    <option>Client 1</option>
+				    <option>Client 2</option>
+				    <option>Client 3</option>
+				 </select>
+			  </div>
+			  <div class="form-group">
+			    <label for="assigned">Forms</label>
+			    <select class="form-control" id="assigned">
+				    <option selected="" disabled="">Select Forms</option>
+				    <option>Client 1</option>
+				    <option>Client 2</option>
+				    <option>Client 3</option>
+				 </select>
+			  </div>
+			  </div>
+			  <div class="advance-options">
+			  	<div class="form-group">
+			    <label for="assigned">Task Owner</label>
+			    <select class="form-control" id="assigned">
+				    <option selected="" disabled="">Select Owner</option>
+				    <option>Ritesh Arora</option>
+				    <option>Rajesh</option>
+				    <option>Prashant</option>
+				 </select>
+			  </div>
+			  <div class="priority">
+	              <label for="check">Priority</label>
+	          </div>
+	          <div class="priority-checks">
+				  <label class="check-radio">None
+					  <input class="grey" type="radio" checked="checked" name="radio">
+					  <span class="checkmark grey"></span>
+					</label>
+					<label class="check-radio">Low
+					  <input class="green" type="radio" name="radio">
+					  <span class="checkmark green"></span>
+					</label>
+					<label class="check-radio">Medium
+					  <input class="yellow" type="radio" name="radio">
+					  <span class="checkmark yellow"></span>
+					</label>
+					<label class="check-radio">High
+					  <input class="red" type="radio" name="radio">
+					  <span class="checkmark red"></span>
+				  </label>
+			   </div>
+			   <div class="existing-task">
+			   	<label class="container-radio">Add to existing Task List
+				  <input type="checkbox">
+				  <span class="checkmark"></span>
+				</label>
+			   </div>
+
+			   <div class="form-group">
+			    <label for="tagset">Tags Sets</label>
+			    <select class="demo" multiple>
+			      <option valus="0" selected="" disabled="">Select Tags...</option>
+				  <option value="1">Acura</option>
+				  <option value="2">Audi</option>
+				  <option value="3">BMW</option>
+				  <option value="4">Cadillac</option>
+				  <option value="5">Chevrolet</option>
+				  <option value="6">Ferrari</option>
+				  <option value="7">Ford</option>
+				  <option value="8">Honda</option>
+				  <option value="9">Lexus</option>
+				  <option value="10">Mercedes-Benz</option>
+				</select>
+			   </div>
+			  
+			   <div class="attach-doc">
+			   	 <p>Attach Documents</p>
+			   	 <p class="select-files">Select Files:</p>
+			   	   <div class="custom-file">
+			   	   	<i class="fa fa-upload" aria-hidden="true"></i>
+				    <input type="file" class="custom-file-input" id="customFile">
+				    <label class="custom-file-label" for="customFile">Choose file</label>
+				   </div>
+			   </div>
+			   </div>
+			   <button type="button" class="btn btn-default open-advance-options">Advance Options</button>
+			 </div>
+			  <div class="bottom-form-bar">
+			   	  <button type="button" class="btn btn-default cancel-form-btn">Cancel</button>
+				  <button type="submit" class="btn btn-default">Submit</button>
+				</div>
+			</form>
+	     </div><!-- Create New Task Form Ends Here -->
+
+  	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<script src="js/advantage.js"></script><!-- Custom Javascript File -->
+	<script src="js/tokenize2.js"></script><!-- Custom Javascript File -->
+</body>
+</html>

@@ -1,0 +1,711 @@
+* {
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    background-color: #1e3342;
+    height: 60px;
+}
+.left-nav {
+    float: left;
+}
+.right-nav {
+    float: right;
+}
+.active {
+    background-color: #286291;
+}
+ul.logo-nav, ul.for-user {
+    margin: 0;
+    position: relative;
+}
+ul.logo-nav li, ul.for-user li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 3px;
+    transition: 0.2s all linear;
+}
+ul.logo-nav li:hover, ul.for-user li:hover {
+    background-color: #286291;
+}
+ul.logo-nav li:nth-child(1):hover {
+    background-color: #1e3342;
+}
+ul.logo-nav li a, ul.for-user li a {
+    color: #fff;
+    font-size: 13px;
+    display: block;
+    text-decoration: none;
+}
+ul.logo-nav li a:hover, ul.for-user li a:hover {
+    text-decoration: none;
+}
+ul.logo-nav li {
+    margin-right: 40px;
+    line-height: 60px;
+    position: relative;
+    top: -2px;
+}
+ul.for-user li {
+    margin-left: 40px;
+    cursor: pointer;
+    line-height: 60px;
+}
+ul.for-user li span {
+    color: #fff;
+}
+ul.help-dropdown li {
+    display: block;
+    margin: 0;
+    line-height: normal;
+    padding: 0;
+}
+ul.help-dropdown li:hover {
+    background-color: unset;
+}
+.profile-dropdown .help-dropdown-user li:hover {
+    background-color: unset;
+}
+ul.logo-nav li a.main-logo {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+img.avatar-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: contain; /* Some Times Whole User Picture Doesn't appear, Object Fit Contain Works in that Case*/
+}
+ul.help-dropdown,  ul.help-dropdown-user {
+    background: #fff;
+    width: 100px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px #000;
+    position: absolute;
+}
+ul.help-dropdown {
+    left: 0;
+    top: 100%;
+    display: none;
+    z-index: 111;
+}
+ul.help-dropdown-user {
+    right: 0;
+    display: none;
+    z-index: 111;
+}
+ul.help-dropdown-user li {
+    margin: 0;
+    width: 100%;
+    line-height: normal;
+    display: block;
+    cursor: pointer;
+    padding: 0;
+}
+ul.help-dropdown-user li a, ul.help-dropdown li a {
+    display: block;
+    color: #000;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+}
+.no-border {
+    border: none !important;
+}
+/*+++++++CSS FOR ANIMATED CIRCLES ++++*/
+.circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 110px;
+}
+.circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+}
+.circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+    animation-delay: 2s;
+}
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+.circular-chart.orange .circle {
+    stroke: #274055;
+}
+.circular-chart.pink .circle {
+    stroke: #e91e63;
+}
+.circular-chart.blue .circle {
+    stroke: #2196f3;
+}
+.circular-chart.green .circle {
+    stroke: #56be5a;
+}
+.percentage {
+    fill:#b6b6b6;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+}
+section.card-section {
+    padding: 10px;
+}
+.tasks {
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+.total-task {
+    background: #274055;
+}
+.open-task {
+    background: #e91e63;
+}
+.wip-task {
+    background: #2196f3;
+}
+.closed-task {
+    background: #56be5a;
+}
+.numbers-wrap {
+    padding: 30px 0px 0px 30px;
+}
+.numbers-wrap p:nth-child(1) {
+    color: #999;
+    margin-bottom: 20px;
+}
+p.task-number {
+    font-size: 30px;
+    color: #777;
+}
+.text-wrapper {
+    background: #f9f9f9;
+}
+.card-wrapper {
+    box-shadow: 0px 0px 4px #000;
+    user-select: none;
+    pointer-events: none;
+}
+.border-section {
+    border: 1px solid #ddd;
+    padding: 15px 0px;
+}
+.right-section {
+    text-align: right;
+}
+span.overview {
+    border: 1px solid #ddd;
+    padding: 5px 7px;
+    color: #777;
+    font-size: 13px;
+    cursor: pointer;
+}
+.no-margin {
+    margin: 0 !important;
+}
+span.overview span.rounded {
+    background: #2196f3;
+    padding: 0px 8px;
+    border-radius: 30px;
+    color: #fff;
+    margin-left: 10px;
+    font-size: 11px;
+}
+.left-section .filter-by {
+    font-size: 12px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+form.form-horizontal {
+    display: inline-block;
+    margin-right: 30px;
+    max-width: 220px;
+    width: 100%;
+}
+button.add-task {
+    background: #2196f3;
+    color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px 9px;
+}
+.form-horizontal .form-control {
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 5px 12px;
+    border-radius: 30px;
+    z-index: 1;
+    position: relative;
+    background: transparent;
+}
+.form-horizontal .form-group {
+    margin-bottom: 0px;
+    position: relative;
+}
+.form-horizontal i.fa.fa-search {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    color: #999;
+}
+span.overview.overlay-active {
+    background: #2196f3;
+    color: #fff;
+}
+span.overview.overlay-active span {
+    background-color: #fff;
+    color: #2196f3;
+}
+.table-bar {
+    padding: 5px 0px 15px;
+    border-bottom: 2px solid #c2c2c2;
+}
+.left-section {
+    line-height: 30px;
+}
+.data-table-section .table>thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+    padding: 20px 10px;
+}
+.data-table-section .table>tbody>tr>td, 
+.data-table-section .table>tbody>tr>th, 
+.data-table-section .table>tfoot>tr>td, 
+.data-table-section .table>tfoot>tr>th, 
+.data-table-section .table>thead>tr>td, 
+.data-table-section .table>thead>tr>th {
+    border-top: none;
+    vertical-align: middle;
+}
+.data-table-section .table>tbody>tr.toggle-row>td {
+    border-bottom: 1px dashed #ccc;
+}
+
+.data-table-section .folder-content td {
+    padding: 15px;
+}
+.data-table-section table.table {
+    margin-bottom: 0px;
+}
+td.edit-wrapper {
+    position: relative;
+}
+ul.edit {
+    background: #fff;
+    width: 150px;
+    box-shadow: 0px 0px 3px #000;
+    border-radius: 1px;
+    margin: 0;
+    position: absolute;
+    right: 35px;
+    top:45px;
+    z-index: 11;
+    display: none;
+}
+ul.edit li {
+    list-style-type: none;
+}
+ul.edit li a {
+    color: #000;
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+}
+.accordian .fa {
+    color: #2196f3;
+    font-size: 23px;
+}
+.edit-wrapper span {
+    display: block;
+    text-align: center;
+    padding: 8px 0px 4px;
+    cursor: pointer;
+    transition: 0.2s all linear;
+}
+.edit-wrapper span .fa {
+    font-size: 18px;
+    color: #999;
+}
+.edit-wrapper span:hover {
+    background-color: #eee;
+}
+td.due-date {
+    color: #e91e63;
+}
+.toggle-row td {
+    font-size: 12px;
+}
+.hide-icon {
+    display: none !important;  
+}
+.accordian {
+    text-align: center;
+}
+.folder-content {
+    cursor: pointer;
+}
+i.fa.fa-exclamation-circle {
+    color: #fe0056;
+}
+.table span.bar {
+    width: 3px;
+    height: 20px;
+    background: #fe0056;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.table .toggle-row {
+    display: none;
+}
+/* The container */
+.priority-checks .check-radio {
+    display: inline-block;
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-right: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Hide the browser's default radio button */
+.priority-checks .check-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+/* Create a custom radio button */
+.priority-checks .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+/* On mouse-over, add a grey background color */
+.priority-checks .check-radio:hover input ~ .checkmark {
+  background-color: #fff;
+}
+/* When the radio button is checked, add a blue background */
+.priority-checks .check-radio input.grey:checked ~ .checkmark:after {
+  background-color: #999;
+}
+.priority-checks .check-radio input.green:checked ~ .checkmark:after {
+  background-color: green;
+}
+.priority-checks .check-radio input.yellow:checked ~ .checkmark:after {
+  background-color: yellow;
+}
+.priority-checks .check-radio input.red:checked ~ .checkmark:after {
+  background-color:red;
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.priority-checks .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the indicator (dot/circle) when checked */
+.priority-checks .check-radio input:checked ~ .checkmark:after {
+  display: block;
+}
+.priority-checks .check-radio .checkmark.grey {
+  border: 2px solid grey;
+}
+.priority-checks .check-radio .checkmark.green {
+  border: 2px solid green;
+}
+.priority-checks .check-radio .checkmark.yellow {
+  border: 2px solid yellow;
+}
+.priority-checks .check-radio .checkmark.red {
+  border: 2px solid red;
+}
+/* Style the indicator (dot/circle) */
+.priority-checks .check-radio .checkmark:after {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+/* The container */
+.existing-task .container-radio {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hide the browser's default checkbox */
+.existing-task .container-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Create a custom checkbox */
+.existing-task .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #fff;
+  border:2px solid #2196F3;
+  border-radius:2px;
+}
+/* When the checkbox is checked, add a blue background */
+.container-radio input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.existing-task .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the checkmark when checked */
+.existing-task .container-radio input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Style the checkmark/indicator */
+.existing-task .container-radio .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.custom-file {
+    border: 1px dashed #2196f3;
+    display: inline-block;
+    width: 168px;
+    height: 70px;
+    text-align: center;
+    overflow: hidden;
+    color: #2196f3;
+    position: relative;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.custom-file input[type=file] {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.custom-file .fa, .custom-file label {
+    display: block;
+}
+.custom-file .fa {
+    font-size: 32px;
+}
+.new-task-form {
+    position: fixed;
+    z-index: 777;
+    right: -85%;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    overflow: auto;
+    background: #fff;
+    width: 45%;
+    border: 1px solid #ddd;
+    transition: 0.2s all linear;
+}
+.form-head {
+    background-color: #286291;
+    clear: both;
+    padding: 13px 15px 5px;
+}
+.form-head p {
+    float: left;
+    color: #fff;
+    font-size: 16px;
+}
+.form-head .fa {
+    float: right;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+.new-task-form label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: lighter;
+    color: #999;
+    font-size: 12px;
+}
+.new-task-form label span {
+    color: red;
+}
+.form-padding-wrapper {
+    padding: 15px;
+    min-height: calc(100vh - 117px);
+}
+.form-padding-wrapper .form-control {
+    border-radius: 0px;
+    box-shadow: unset;
+}
+.bottom-form-bar {
+    padding: 15px;
+    background: #ddd;
+    border-top: 1px solid #ddd;
+}
+.open-for-assigned-top {
+    display: none;
+}
+.advance-options {
+    display: none;
+}
+button.btn.btn-default.open-advance-options {
+    width: 168px;
+    border-radius: 0;
+    margin-top: 10px;
+    font-size: 12px;
+}
+.make-bg-blue {
+    background-color: #2196f3 !important;
+}
+.make-bg-blue .fa, .make-bg-blue label.custom-file-label {
+    color: #fff;
+}
+/*==== CSS FOR SCROLL BAR INSIDE FORM===*/
+.new-task-form::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+    border-radius: 0px;
+    background-color: #F5F5F5;
+}
+.new-task-form::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+.new-task-form::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+.overlay, .overlay2 {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 770;
+    background-color: rgba(255, 255, 255, 0.9);
+    height: calc(100vh - 0px);
+    display: none;
+}
+.open-task-on-mobile {
+    display: none;
+}
+/*+++CSS For Mobile Hamburger Menu+++*/
+#nav-icon3{
+    width: 45px;
+    height: 30px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    display: none;
+}
+#nav-icon3 span{
+    display: block;
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    background: #fff;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+#nav-icon3 span:nth-child(1) {
+    top: 0px;
+}
+#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+    top: 12px;
+}
+#nav-icon3 span:nth-child(4) {
+    top: 24px;
+}
+#nav-icon3.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+#nav-icon3.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#nav-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+#nav-icon3.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+/*+++++++++ CSS For Navigation Bar Ends Here +++++++++++*/
+.open-filter-options {
+    display: none;
+}
+.mobile-logo {
+    display: none;
+}
+form.mobile-horizontal-form {
+    display: none;
+}
+ul li.profile-dropdown-mobile, ul li.user-dropdown-mobile {
+    display: none;
+}
